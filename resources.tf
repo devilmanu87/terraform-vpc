@@ -37,8 +37,8 @@ resource "aws_route_table_association" "rta_subnet_public" {
   route_table_id = "${aws_route_table.rtb_public.id}"
 }
 
-resource "aws_security_group" "sg_22" {
-  name = "sg_22"
+resource "aws_security_group" "test-sg" {
+  name = "test-sg"
   vpc_id = "${aws_vpc.vpc.id}"
 
   # SSH access from the VPC
